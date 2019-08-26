@@ -1,0 +1,72 @@
+{{!-- Div for actual background --}}
+<div class="container" style="background-color: white">
+
+  {{!-- Jumbotron --}}
+  <div class="jumbotron jumbotron-fluid text-white" style="background-color: black" >
+    <div class="container">
+
+      {{!-- image --}}
+      <img src="https://art.pixilart.com/f1b144ba39948ab.png" class="rounded float-right" alt="Responsive image"
+        width="200" height="auto">
+
+      {{!-- Header + Text --}}
+      <h1 class="display-4">EAT-THE-BURGER</h1>
+      <p class="lead">Submit your order below and devour the burger!</p>
+      <br>
+
+      {{!-- User Input --}}
+      <h2>Order a Burger</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="newBurger">Add your order here:</label>
+          <textarea class="form-control" id="newBurger" rows="3"></textarea>
+        </div>
+
+        {{!-- Button to submit order --}}
+        <button type="submit" class="btn btn-success">Order</button>
+      </form>
+    </div>
+  </div>
+
+<table class="table table-borderless">
+  <thead class ="thead text-white text-center" style="background-color: black" >
+    <tr>
+      <th scope="col">Burgers</th>
+      <th scope="col">Devoured</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+              <ul>
+              {{#each burgers}}
+              {{#unless devoured}}
+              <strong> {{this.id}} -
+                {{this.burger_name}} </strong>
+              <button type="button" class="devouredBurger btn btn-warning" id="devouredBurger" data-id="{{this.id}}"
+                data-newDevoured={{devour}}><span class="fas fa-hamburger"></span> Devour </button>
+              <hr>
+              {{/unless}}
+              {{/each}}
+            </ul>
+      </th>
+
+      <td>
+          <ul>
+              {{#each burgers}}
+              {{#if devoured}}
+              <strong> {{this.id}} -
+                {{this.burger_name}} </strong>
+              <button type="button" class="deleteBurger btn btn-danger" id="deleteBurger" data-id="{{this.id}}"
+                data-newDevoured={{devour}}><span class="fas fa-hamburger"></span> Delete </button>
+              <hr>
+              {{/if}}
+              {{/each}}
+            </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ 
+</div>
