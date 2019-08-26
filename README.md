@@ -19,7 +19,7 @@ I was motivated to complete this project to gain additional exposure to the Mode
 * Handlebars.js
 * MySQL
 
-## User Guide + Screenshots
+## User Guide
 
 ### Step 1: Add + Submit a Burger to Order
 
