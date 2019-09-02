@@ -6,8 +6,9 @@ Eat-The-Burger is a log application which allows users to input a burger name to
 
 ## Heroku Link
 
+
 ## Motivation 
-I was motivated to complete this project to gain additional exposure to the Model-View-Controller (MVC) paradigm and to gain additional experience with Object-relational mapping. MVC is an architectural pattern that I had not been familiarized with before and through this project, I learned how to structure my codebase efficiently. Additional, my experience with this project taught me more about ORM to create reusable methods for querying a database. 
+I was motivated to complete this project to gain additional exposure to the Model-View-Controller (MVC) paradigm and to gain additional experience with Object-relational mapping. MVC is an architectural pattern that I had not been familiarized with before and through this project, I learned how to structure my codebase efficiently. Additionally, my experience with this project taught me more about ORM to create reusable methods for querying a database. 
 
 ## Tech Used
 * Express.js
